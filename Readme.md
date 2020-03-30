@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Федотова](https://up.htmlacademy.ru/adaptive/19/user/1313071).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталия Белоева](https://htmlacademy.ru/profile/id1123699).
 
 ---
 
