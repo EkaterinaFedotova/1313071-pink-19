@@ -23,7 +23,7 @@
               <a href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="">HTML Academy</a>
+              <a href="www.htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -31,97 +31,90 @@
     </header>
     <main class="page-form">
       <h1 class="page-form__name">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <form class="form">
-        <section class="username">
-          <label class="username__label" for="surname">Фамилия</label>
-          <input class="username__input" type="text" id="surname" name="surname" value="Укажите фамилию *" required>
-          <label class="username__label" for="name">Имя</label>
-          <input class="username__input" type="text" id="name" name="name" value="Введите ваше имя *" required>
-          <label class="username__label" for="father-name">Отчество</label>
-          <input class="username__input" type="text" id="father-name" name="father-name" value="Ну и отчество тоже">
-        </section>
-        <section class="checklist">
-          <fieldset class="checklist__fieldset">
-              <legend class="checklist__title">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="checklist__list">
-                <li class="checklist__item">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="selfie" checked>
-                  <label class="checkbox-label" for="selfie">Сделал селфи с акулой</label>
-                </li>
-                <li class="checklist__item">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="sunburned" checked>
-                  <label class="checkbox-label" for="sunburned">Обгорел на пляже</label>
-                </li>
-                <li class="checklist__item">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="norris">
-                  <label class="checkbox-label" for="norris">Видел Чака Норриса</label>
-                </li>
-                <li class="checklist__item">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="souvenirs">
-                  <label class="checkbox-label" for="souvenirs">Накупил сувениров</label>
-                </li>
-                <li class="checklist__item">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="efel-tower" checked>
-                  <label class="checkbox-label" for="efel-tower">Удержал башню</label>
-                </li>
-                <li class="checklist__item">
-                  <input class="visually-hidden checkbox-input" type="checkbox" id="hotel">
-                  <label class="checkbox-label" for="hotel">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
-        </section>
-        <section class="user-contacts">
-          <label class="user-contacts__label" for="phone-number">Номер телефона</label>
-          <input class="user-contacts__input" type="text" id="phone-number" name="phone-number" value="Номер, пожалуйста">
-          <label class="user-contacts__label" for="name">Адрес почты</label>
-          <input class="user-contacts__input" type="text" id="email" name="email" value="Введите почту *" required>
-        </section>
-        <section class="radiolist">
-          <fieldset class="radiolist__fieldset">
-              <legend class="radiolist__title">С каким приложением путешествовали?</legend>
-              <ul class="radiolist__list">
-                <li class="radiolist__item">
-                  <input class="visually-hidden radio-input" type="radio" id="iOS" name="radio" checked>
-                  <label class="radio-label" for="iOS">Pink для iOS</label>
-                </li>
-                <li class="radiolist__item">
-                  <input class="visually-hidden radio-input" type="radio" id="android" name="radio">
-                  <label class="radio-label"for="android">Pink на Android</label>
-                </li>
-                <li class="radiolist__item">
-                  <input class="visually-hidden radio-input" type="radio" id="windows" name="radio">
-                  <label class="radio-label"for="windows">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
-        </section>
+      <form class="form" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__username username">
+          <label class="username__label input-label" for="user-surname">Фамилия</label>
+          <input class="username__input input-field" type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию *" required>
+          <label class="username__label input-label" for="user-name">Имя</label>
+          <input class="username__input input-field" type="text" id="user-name" name="user-name" placeholder="Введите ваше имя *" required>
+          <label class="username__label input-label" for="user-fathername">Отчество</label>
+          <input class="username__input input-field" type="text" id="user-fathername" name="user-fathername" placeholder="Ну и отчество тоже">
+        </fieldset>
+        <fieldset class="checklist">
+          <legend class="checklist__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="checklist__list">
+            <li class="checklist__item">
+              <input class="visually-hidden checkbox-input" type="checkbox" id="selfie" name="selfie" checked>
+              <label class="checkbox-label" for="selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="checklist__item">
+              <input class="visually-hidden checkbox-input" type="checkbox" id="sunburned" name="sunburned" checked>
+              <label class="checkbox-label" for="sunburned">Обгорел на пляже</label>
+            </li>
+            <li class="checklist__item">
+              <input class="visually-hidden checkbox-input" type="checkbox" id="norris" name="norris">
+              <label class="checkbox-label" for="norris">Видел Чака Норриса</label>
+            </li>
+            <li class="checklist__item">
+              <input class="visually-hidden checkbox-input" type="checkbox" id="souvenirs" name="souvenirs">
+              <label class="checkbox-label" for="souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="checklist__item">
+              <input class="visually-hidden checkbox-input" type="checkbox" id="efel-tower" name="efel-tower" checked>
+              <label class="checkbox-label" for="efel-tower">Удержал башню</label>
+            </li>
+            <li class="checklist__item">
+              <input class="visually-hidden checkbox-input" type="checkbox" id="hotel" name="hotel">
+              <label class="checkbox-label" for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="user-contacts">
+          <label class="user-contacts__label input-label" for="user-phonenumber">Номер телефона</label>
+          <input class="user-contacts__input input-field" type="text" id="user-phonenumber" name="user-phonenumber" placeholder="Номер, пожалуйста">
+          <label class="user-contacts__label input-label" for="user-email">Адрес почты</label>
+          <input class="user-contacts__input input-field" type="text" id="user-email" name="user-email" placeholder="Введите почту *" required>
+        </fieldset>
+        <fieldset class="radiolist">
+          <legend class="radiolist__title">С каким приложением путешествовали?</legend>
+          <ul class="radiolist__list">
+            <li class="radiolist__item">
+              <input class="visually-hidden radio-input" type="radio" id="iOS" name="radio" checked>
+              <label class="radio-label" for="iOS">Pink для iOS</label>
+            </li>
+            <li class="radiolist__item">
+              <input class="visually-hidden radio-input" type="radio" id="android" name="radio">
+              <label class="radio-label" for="android">Pink на Android</label>
+            </li>
+            <li class="radiolist__item">
+              <input class="visually-hidden radio-input" type="radio" id="windows" name="radio">
+              <label class="radio-label" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
         <section class="feedback">
           <label class="feedback__title" for="feedback-text">Опишите свои эмоции</label>
           <textarea class="feedback__text" name="feedback-text" id="feedback-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </section>
         <button class="form__button" type="submit"></button>
-        <p class="form__note"><span class="form__note--required">*</span>— обязательные поля</p>
+        <p class="form__note note"><span class="form__note note--required">*</span>— обязательные поля</p>
       </form>
     </main>
     <footer class="footer">
       <div class="footer-wrapper">
-        <section class="footer__social networks">
-          <ul class="networks__list">
-            <li class="networks__item">
-              <a class="networks__twitter" href="" aria-label="Twitter"></a>
-            </li>
-            <li class="networks__item">
-              <a class="networks__fb" href="" aria-label="Facebook"></a>
-            </li>
-            <li class="networks__item">
-              <a class="networks__youtube" href="" aria-label="Youtube"></a>
-            </li>
-          </ul>
-          </section>
-          <section class="copywrite">
-            <p class="copywrite__text">Разработано</p>
-          </section>
+        <ul class="footer__list networks__list">
+          <li class="networks__item">
+            <a class="networks__twitter" href="" aria-label="Twitter"></a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__fb" href="" aria-label="Facebook"></a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__youtube" href="" aria-label="Youtube"></a>
+          </li>
+        </ul>
+        <p class="footer__text copywrite__text">Разработано</p>
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Html-академии"></a>
       </div>
     </footer>
   </body>
