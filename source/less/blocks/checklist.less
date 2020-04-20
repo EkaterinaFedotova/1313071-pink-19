@@ -1,0 +1,72 @@
+.checklist {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 604px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.checklist__title {
+  display: block;
+  width: 218px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #d22856;
+  margin: 0 auto;
+  padding-top: 41px;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+}
+
+.checklist__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.checklist__item {
+  display: block;
+  line-height: 35px;
+  margin-bottom: 47px;
+}
+
+.checkbox-input {
+  position: relative;
+}
+
+.checkbox-input::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  width: 35px;
+  height: 35px;
+  top: -25px;
+  left: 20px;
+}
+
+.checkbox-input:checked::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url('../img/icon-yes.svg') center no-repeat;
+  top: -25px;
+  left: 20px;
+}
+
+.checkbox-label {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  padding-left: 90px;
+}
