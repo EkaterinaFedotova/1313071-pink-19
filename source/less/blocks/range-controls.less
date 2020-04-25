@@ -1,0 +1,75 @@
+.range-controls {
+  width: inherit;
+}
+
+.range-controls__list {
+  list-style: none;
+  padding: 0;
+}
+
+.range-controls__item {
+  width: inherit;
+}
+
+.range-controls__button {
+  width: inherit;
+}
+
+.range-controls__button:hover {
+  fill: #283645;
+  opacity: 0.5;
+}
+
+.range-controls__button:active {
+  fill: #d22856;
+}
+
+.range-controls__button--crop {
+  background-image: url("..img/icon-editor-crop.svg");
+  width: 44px;
+  height: 44px;
+  bachrgound-color: transparent;
+  border: none;
+}
+
+.range-controls__button--color {
+  background-image: url("..img/icon-editor-fill.svg");
+  width: 48px;
+  height: 43px;
+  bachrgound-color: transparent;
+  border: none;
+}
+
+.range-controls__button--contrast {
+  background-image: url("..img/icon-editor-contrast.svg");
+  width: 32px;
+  height: 32px;
+  bachrgound-color: transparent;
+  border: none;
+}
+
+.range-controls__input {
+  -webkit-appearance: none;
+  border-radius: 2px;
+  width: 240px;
+  height: 2px;
+  outline : none;
+  border:1px solid #233343;
+  background-color: #233343;
+  margin: 0 auto;
+  display: block;
+}
+
+.range-controls__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+  cursor:pointer;
+}
+
+.range-controls__input::-webkit-slider-thumb:active {
+  background-color: #d22856;
+}

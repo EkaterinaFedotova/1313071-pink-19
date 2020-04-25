@@ -3,7 +3,6 @@
   flex-direction: column;
   border: none;
   background-color: #f2f2f2;
-  width: 320px;
   height: 604px;
   padding: 0;
   margin: 0;
@@ -13,9 +12,6 @@
 .checklist__title {
   display: block;
   width: 218px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   text-align: center;
   color: #d22856;
@@ -37,11 +33,11 @@
   margin-bottom: 47px;
 }
 
-.checkbox-input {
+.checklist__input {
   position: relative;
 }
 
-.checkbox-input::before {
+.checklist__input::before {
   content: "";
   position: absolute;
   display: block;
@@ -53,7 +49,7 @@
   left: 20px;
 }
 
-.checkbox-input:checked::before {
+.checklist__input:checked::before {
   content: "";
   position: absolute;
   display: block;
@@ -62,10 +58,16 @@
   left: 20px;
 }
 
-.checkbox-label {
-  font-family: "Open Sans", "Arial", sans-serif;
+.checklist__input:hover {
+  border-color: #283645;
+}
+
+.checklist__input:active {
+  border-color: #d22856;
+}
+
+.checklist__label {
   font-size: 18px;
-  font-weight: 400;
   line-height: 30px;
   color: #283645;
   padding-left: 90px;

@@ -13,9 +13,6 @@
 .radiolist__title {
   display: block;
   width: 218px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   text-align: center;
   color: #d22856;
@@ -37,11 +34,11 @@
   margin-bottom: 39px;
 }
 
-.radio-input {
+.radiolist__input {
   position: relative;
 }
 
-.radio-input::before {
+.radiolist__input::before {
   content: "";
   position: absolute;
   display: block;
@@ -54,7 +51,7 @@
   left: 20px;
 }
 
-.radio-input:checked::before {
+.radiolist__input:checked::before {
   content: "";
   position: absolute;
   display: block;
@@ -67,10 +64,16 @@
   left: 31px;
 }
 
-.radio-label {
-  font-family: "Open Sans", "Arial", sans-serif;
+.radiolist__input:hover {
+  border-color: #283645;
+}
+
+.radiolist__input:active {
+  border-color: #d22856;
+}
+
+.radiolist__label {
   font-size: 18px;
-  font-weight: 400;
   line-height: 30px;
   color: #283645;
   padding-left: 90px;
