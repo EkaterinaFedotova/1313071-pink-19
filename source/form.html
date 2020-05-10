@@ -3,27 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Приложение Пинк">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
+        <button class="main-nav__burger-menu visually-hidden" type="button"></button>
+        <button class="main-nav__cross visually-hidden" type="button"><span class="visually-hidden">Закрыть</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="www.htmlacademy.ru">HTML Academy</a>
+              <a class="site-list__link" href="www.htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -32,6 +34,7 @@
     <main class="page-form">
       <h1 class="page-form__name">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <form class="form" action="https://echo.htmlacademy.ru">
+        <p class="form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <fieldset class="form__username username">
           <label class="username__label input-label" for="user-surname">Фамилия</label>
           <input class="username__input input-field" type="text" id="user-surname" name="user-surname" placeholder="Укажите фамилию *" required>
@@ -41,31 +44,31 @@
           <input class="username__input input-field" type="text" id="user-fathername" name="user-fathername" placeholder="Ну и отчество тоже">
         </fieldset>
         <fieldset class="checklist">
-          <legend class="checklist__title">Ваши безбашенные достижения в путешествии</legend>
+          <p class="checklist__title">Ваши безбашенные достижения в путешествии</p>
           <ul class="checklist__list">
             <li class="checklist__item">
-              <input class="visually-hidden checkbox-input" type="checkbox" id="selfie" name="selfie" checked>
-              <label class="checkbox-label" for="selfie">Сделал селфи с акулой</label>
+              <input class="visually-hidden checklist__input" type="checkbox" id="selfie" name="selfie" checked>
+              <label class="checklist__label" for="selfie">Сделал селфи с акулой</label>
             </li>
             <li class="checklist__item">
-              <input class="visually-hidden checkbox-input" type="checkbox" id="sunburned" name="sunburned" checked>
-              <label class="checkbox-label" for="sunburned">Обгорел на пляже</label>
+              <input class="visually-hidden checklist__input" type="checkbox" id="sunburned" name="sunburned" checked>
+              <label class="checklist__label" for="sunburned">Обгорел на пляже</label>
             </li>
             <li class="checklist__item">
-              <input class="visually-hidden checkbox-input" type="checkbox" id="norris" name="norris">
-              <label class="checkbox-label" for="norris">Видел Чака Норриса</label>
+              <input class="visually-hidden checklist__input" type="checkbox" id="norris" name="norris">
+              <label class="checklist__label" for="norris">Видел Чака Норриса</label>
             </li>
             <li class="checklist__item">
-              <input class="visually-hidden checkbox-input" type="checkbox" id="souvenirs" name="souvenirs">
-              <label class="checkbox-label" for="souvenirs">Накупил сувениров</label>
+              <input class="visually-hidden checklist__input" type="checkbox" id="souvenirs" name="souvenirs">
+              <label class="checklist__label" for="souvenirs">Накупил сувениров</label>
             </li>
             <li class="checklist__item">
-              <input class="visually-hidden checkbox-input" type="checkbox" id="efel-tower" name="efel-tower" checked>
-              <label class="checkbox-label" for="efel-tower">Удержал башню</label>
+              <input class="visually-hidden checklist__input" type="checkbox" id="efel-tower" name="efel-tower" checked>
+              <label class="checklist__label" for="efel-tower">Удержал башню</label>
             </li>
             <li class="checklist__item">
-              <input class="visually-hidden checkbox-input" type="checkbox" id="hotel" name="hotel">
-              <label class="checkbox-label" for="hotel">Разгромил отель</label>
+              <input class="visually-hidden checklist__input" type="checkbox" id="hotel" name="hotel">
+              <label class="checklist__label" for="hotel">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
@@ -76,19 +79,19 @@
           <input class="user-contacts__input input-field" type="text" id="user-email" name="user-email" placeholder="Введите почту *" required>
         </fieldset>
         <fieldset class="radiolist">
-          <legend class="radiolist__title">С каким приложением путешествовали?</legend>
+          <p class="radiolist__title">С каким приложением путешествовали?</p>
           <ul class="radiolist__list">
             <li class="radiolist__item">
-              <input class="visually-hidden radio-input" type="radio" id="iOS" name="radio" checked>
-              <label class="radio-label" for="iOS">Pink для iOS</label>
+              <input class="visually-hidden radiolist__input" type="radio" id="iOS" name="radio" checked>
+              <label class="radiolist__label" for="iOS">Pink для iOS</label>
             </li>
             <li class="radiolist__item">
-              <input class="visually-hidden radio-input" type="radio" id="android" name="radio">
-              <label class="radio-label" for="android">Pink на Android</label>
+              <input class="visually-hidden radiolist__input" type="radio" id="android" name="radio">
+              <label class="radiolist__label" for="android">Pink на Android</label>
             </li>
             <li class="radiolist__item">
-              <input class="visually-hidden radio-input" type="radio" id="windows" name="radio">
-              <label class="radio-label" for="windows">Windows Phone</label>
+              <input class="visually-hidden radiolist__input" type="radio" id="windows" name="radio">
+              <label class="radiolist__label" for="windows">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
@@ -96,21 +99,24 @@
           <label class="feedback__title" for="feedback-text">Опишите свои эмоции</label>
           <textarea class="feedback__text" name="feedback-text" id="feedback-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="form__button" type="submit"></button>
+        <button class="form__button" type="submit">Отправить форму</button>
         <p class="form__note"><span class="form__note form__note--required">*</span>— обязательные поля</p>
       </form>
     </main>
     <footer class="footer">
-      <div class="footer-wrapper">
+      <div class="footer__wrapper">
+        <a class="footer__link" href="index.html">
+          <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Пинк">
+        </a>
         <ul class="footer__list networks">
           <li class="networks__item">
-            <a class="networks__twitter" href="" aria-label="Twitter"></a>
+            <a class="networks__link networks__link--twitter" href="" aria-label="Twitter"></a>
           </li>
           <li class="networks__item">
-            <a class="networks__fb" href="" aria-label="Facebook"></a>
+            <a class="networks__link networks__link--facebook" href="" aria-label="Facebook"></a>
           </li>
           <li class="networks__item">
-            <a class="networks__youtube" href="" aria-label="Youtube"></a>
+            <a class="networks__link networks__link--youtube" href="" aria-label="Youtube"></a>
           </li>
         </ul>
         <p class="footer__text copywrite-text">Разработано<a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Html-академии"></a></p>
