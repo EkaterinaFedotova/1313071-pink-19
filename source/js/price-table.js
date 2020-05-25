@@ -28,7 +28,7 @@
 
       sliderButtons[indexCurrentButton].classList.remove('slider-controls__button--current');
       sliderButtons[indexNextButton].classList.add('slider-controls__button--current');
-      priceTable.style.left = `${(150 - indexNextButton * 100)}%`;
+      priceTable.style.left = '${(150 - indexNextButton * 100)}%';
     }
   }
 })();

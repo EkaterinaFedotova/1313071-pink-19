@@ -4,61 +4,26 @@
   @media @tablet {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
   }
 
   &--full {
     position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    width: auto;
-    max-width: 320px;
-
-    @media @tablet {
-      width: auto;
-      max-width: 700px;
-    }
-
-    @media @desktop {
-      max-width: 1200px;
-    }
+    width: 100%;
   }
 }
 
 .photo__link {
   display: block;
   overflow: hidden;
-  width: 280px;
-  height: 180px;
   color: @white;
   text-decoration: none;
-
-  @media @tablet {
-    width: 300px;
-    height: 300px;
-  }
-
-  @media @desktop {
-    width: 300px;
-    height: 400px;
-  }
+  width: 100%;
+  height: auto;
 
   &--full {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: 137px;
-
-    @media @tablet {
-      width: 700px;
-      height: 509px;
-    }
-
-    @media @desktop {
-      width: 1200px;
-      height: 506px;
-    }
+    width: 100%;
+    height: auto;
 
     &::before {
       content: attr(data-panorama-text);
@@ -88,7 +53,7 @@
 
 .photo__image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
